@@ -3,7 +3,7 @@ import React from "react";
 
 const fetchContent = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos", {
-    // next: { revalidate: 60 },
+    next: { revalidate: 30 },
   }).then((response) => response.json());
 
   return res;
