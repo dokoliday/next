@@ -11,16 +11,10 @@ const Home = () => {
         <p className=" text-amber-400 text-sm ">tab 1</p>
       </Link>
       <Link
-        href={"/content"}
+        href={"/other"}
         className=" border-amber-400 border-solid rad rounded-md border-2 p-5"
       >
-        <p className=" text-amber-400 text-sm ">tab 2</p>
-      </Link>
-      <Link
-        href={"/content"}
-        className=" border-amber-400 border-solid rad rounded-md border-2 p-5"
-      >
-        <p className=" text-amber-400 text-sm ">tab 3</p>
+        <p className=" text-amber-400 text-sm ">OTHER</p>
       </Link>
     </div>
   );
