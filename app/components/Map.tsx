@@ -1,9 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { json } from "stream/consumers";
 import { mapItems } from "../constants/mapItems";
-import { shuffle } from "../utils/shuffleArray";
+import { shuffle } from "../functions/shuffleArray";
 
 type TProps = {
   turn: number;
@@ -14,8 +13,6 @@ export const Map = ({ turn, wind }: TProps) => {
   const [mapState, setMapstate] = useState<
     null | { x: number; y: number; type: string }[]
   >(null);
-
-  const [party, setParty] = useState<number>(0);
 
   const onFireEclosion = (
     wind: "east_wind" | "west_wind" | "south_wind" | "north_wind" | null

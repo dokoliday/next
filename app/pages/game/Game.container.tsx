@@ -7,7 +7,7 @@ import { Elements } from "../../components/Elements";
 // import { elementItems } from "../../constants/elementItems";
 import { Map } from "../../components/Map";
 import { elementItems } from "../../constants/elementItems";
-import { shuffle } from "../../utils/shuffleArray";
+import { shuffle } from "../../functions/shuffleArray";
 
 export const GameContainer = () => {
   const [turn, setTurn] = useState<number>(0);
